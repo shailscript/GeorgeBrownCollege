@@ -1,0 +1,85 @@
+{
+  "className": "SimpleStorage",
+  "args": [],
+  "code": "608060405234801561001057600080fd5b5060d48061001f6000396000f3fe6080604052348015600f57600080fd5b50600436106058577c01000000000000000000000000000000000000000000000000000000006000350463209652558114605d5780633fa4f2451460755780635524107714607b575b600080fd5b60636097565b60408051918252519081900360200190f35b6063609d565b609560048036036020811015608f57600080fd5b503560a3565b005b60005490565b60005481565b60005556fea165627a7a72305820910251f89365cb15de23956e6ed49992a8d5279dc33cb23236835dcbcba684ab0029",
+  "runtimeBytecode": "6080604052348015600f57600080fd5b50600436106058577c01000000000000000000000000000000000000000000000000000000006000350463209652558114605d5780633fa4f2451460755780635524107714607b575b600080fd5b60636097565b60408051918252519081900360200190f35b6063609d565b609560048036036020811015608f57600080fd5b503560a3565b005b60005490565b60005481565b60005556fea165627a7a72305820910251f89365cb15de23956e6ed49992a8d5279dc33cb23236835dcbcba684ab0029",
+  "realRuntimeBytecode": "6080604052348015600f57600080fd5b50600436106058577c01000000000000000000000000000000000000000000000000000000006000350463209652558114605d5780633fa4f2451460755780635524107714607b575b600080fd5b60636097565b60408051918252519081900360200190f35b6063609d565b609560048036036020811015608f57600080fd5b503560a3565b005b60005490565b60005481565b60005556fea165627a7a72305820",
+  "linkReferences": {},
+  "swarmHash": "910251f89365cb15de23956e6ed49992a8d5279dc33cb23236835dcbcba684ab",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "42400",
+      "executionCost": "93",
+      "totalCost": "42493"
+    },
+    "external": {
+      "getValue()": "378",
+      "setValue(uint256)": "20213",
+      "value()": "400"
+    }
+  },
+  "functionHashes": {
+    "getValue()": "20965255",
+    "setValue(uint256)": "55241077",
+    "value()": "3fa4f245"
+  },
+  "abiDefinition": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getValue",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x20965255"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x3fa4f245"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_val",
+          "type": "uint256"
+        }
+      ],
+      "name": "setValue",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x55241077"
+    }
+  ],
+  "filename": "/Users/shailendrashukla/projects/gbc/bcdv1011/GeorgeBrownCollege/bcdv1011/lab3/.embark/contracts/SampleStorage.sol",
+  "originalFilename": "contracts/SampleStorage.sol",
+  "path": "/Users/shailendrashukla/projects/gbc/bcdv1011/GeorgeBrownCollege/bcdv1011/lab3/contracts/SampleStorage.sol",
+  "gas": "auto",
+  "type": "file",
+  "deploy": true,
+  "_gasLimit": 6000000,
+  "error": false,
+  "deploymentAccount": "0xfE237EC69706e843c86a0cf7336CD092c6143488",
+  "realArgs": [],
+  "address": "0x737c675769fA6815b334a2C94a1D58d06cb79544",
+  "deployedAddress": "0x737c675769fA6815b334a2C94a1D58d06cb79544"
+}

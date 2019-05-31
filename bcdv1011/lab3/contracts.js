@@ -4,7 +4,7 @@ module.exports = {
     // Blockchain node to deploy the contracts
     deployment: {
       host: "localhost", // Host of the blockchain node
-      port: 8546, // Port of the blockchain node
+      port: 8555, // Port of the blockchain node
       type: "ws" // Type of connection (ws or rpc),
       // Accounts to use instead of the default account to populate your wallet.
       // The order here corresponds to the order of `web3.eth.getAccounts`, so the first one is the `defaultAccount`
@@ -32,7 +32,7 @@ module.exports = {
     // order of connections the dapp should connect to
     dappConnection: [
       "$WEB3",  // uses pre existing web3 object if available (e.g in Mist)
-      "ws://localhost:8546",
+      "ws://localhost:8555",
       "http://localhost:8545"
     ],
 
@@ -53,9 +53,7 @@ module.exports = {
 
     contracts: {
       // example:
-      //SimpleStorage: {
-      //  args: [ 100 ]
-      //}
+      SimpleStorage: {}
     }
   },
 
@@ -63,7 +61,7 @@ module.exports = {
   // assumed to be the intended environment by `embark run`
   development: {
     dappConnection: [
-      "ws://localhost:8546",
+      "ws://localhost:8555",
       "http://localhost:8545",
       "$WEB3"  // uses pre existing web3 object if available (e.g in Mist)
     ]
