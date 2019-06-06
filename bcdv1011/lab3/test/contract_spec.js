@@ -1,6 +1,6 @@
 // /*global contract, config, it, assert*/
 
-const SimpleStorage = require('Embark/contracts/SimpleStorage');
+const Counter = require('Embark/contracts/Counter');
 
 let accounts;
 
@@ -13,29 +13,22 @@ config({
   //  ]
   //},
    contracts: {
-     SimpleStorage: {}
+     Counter: {}
    }
 }, (_err, web3_accounts) => {
   accounts = web3_accounts
 });
 
-contract("SimpleStorage", function () {
+contract("Counter", function () {
   this.timeout(0);
 
-  // it("should set constructor value", async function () {
-  //   let result = await SimpleStorage.methods.storedData().call();
-  //   assert.strictEqual(parseInt(result, 10), 100);
-  // });
-
-  it("set storage value", async function () {
-    console.log(SimpleStorage.options.address)
-    await SimpleStorage.methods.setValue(150).send();
-    // let result = await SimpleStorage.methods.get().call();
-    // console.log(result);
+  it("Is deployed?", async function () {
+    assert.ok(Counter.options.address);
   });
 
-  // it("should have account with balance", async function() {
-  //   let balance = await web3.eth.getBalance(accounts[0]);
-  //   assert.ok(parseInt(balance, 10) > 0);
-  // });
+  it('Should increment counter', async function() {
+    let initialCount = await Counter.methods.getCount().call();
+    let response = await Counter.methods.increment().call();
+    assert.ok(parseInt(response) == (initialCount+1));
+  });
 });
