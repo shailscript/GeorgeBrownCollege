@@ -1,0 +1,69 @@
+{
+  "className": "Counter",
+  "args": [],
+  "code": "60806040526000805534801561001457600080fd5b5060b1806100236000396000f3fe6080604052348015600f57600080fd5b5060043610604e577c01000000000000000000000000000000000000000000000000000000006000350463a87d942c81146053578063d09de08a14606b575b600080fd5b60596071565b60408051918252519081900360200190f35b60596077565b60005490565b60008054600101908190559056fea165627a7a72305820974ba32b9f58d0cfbd3061bbd7e92851c5fcd79948821d74b39d1badea0413500029",
+  "runtimeBytecode": "6080604052348015600f57600080fd5b5060043610604e577c01000000000000000000000000000000000000000000000000000000006000350463a87d942c81146053578063d09de08a14606b575b600080fd5b60596071565b60408051918252519081900360200190f35b60596077565b60005490565b60008054600101908190559056fea165627a7a72305820974ba32b9f58d0cfbd3061bbd7e92851c5fcd79948821d74b39d1badea0413500029",
+  "realRuntimeBytecode": "6080604052348015600f57600080fd5b5060043610604e577c01000000000000000000000000000000000000000000000000000000006000350463a87d942c81146053578063d09de08a14606b575b600080fd5b60596071565b60408051918252519081900360200190f35b60596077565b60005490565b60008054600101908190559056fea165627a7a72305820",
+  "linkReferences": {},
+  "swarmHash": "974ba32b9f58d0cfbd3061bbd7e92851c5fcd79948821d74b39d1badea041350",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "35400",
+      "executionCost": "5093",
+      "totalCost": "40493"
+    },
+    "external": {
+      "getCount()": "378",
+      "increment()": "20418"
+    }
+  },
+  "functionHashes": {
+    "getCount()": "a87d942c",
+    "increment()": "d09de08a"
+  },
+  "abiDefinition": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xa87d942c"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "increment",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xd09de08a"
+    }
+  ],
+  "filename": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/lab3/.embark/contracts/Counter.sol",
+  "originalFilename": "contracts/Counter.sol",
+  "path": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/lab3/contracts/Counter.sol",
+  "gas": 106588,
+  "gasPrice": "20000000000",
+  "type": "file",
+  "deploy": true,
+  "_gasLimit": 6000000,
+  "error": false,
+  "deploymentAccount": "0x4d200C87e150b4C71f9fC3b41762a23b80BfE619",
+  "realArgs": [],
+  "deployedAddress": "0x241d6f73084F401289C53be9dA1B66523b730F98",
+  "transactionHash": "0x6d29f80c0498f20d27df25b71f49d34a7f33465bcaf172c21f0b1e6abebd075d"
+}

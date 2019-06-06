@@ -53,7 +53,7 @@ module.exports = {
 
     contracts: {
       // example:
-      SimpleStorage: {}
+      Counter: {}
     }
   },
 
