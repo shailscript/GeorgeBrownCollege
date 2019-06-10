@@ -2,6 +2,7 @@ pragma solidity ^0.5.4;
 
 contract CryptoLoan {
     address public owner;
+    mapping (address => uint) loanRecords;
 
     constructor() public {
         owner = msg.sender;
