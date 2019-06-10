@@ -12,7 +12,7 @@ config({
 
 contract('SimpleLoan', async () => {
     it("Should be deployed properly", async () => {
-        assert.ok(CryptoLoan.options.address);
+        assert.ok(SimpleLoan.options.address);
     });
     
 });
