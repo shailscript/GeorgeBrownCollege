@@ -11,8 +11,6 @@ config({
 });
 
 contract('CryptoLoan', () => {
-    this.timeout(0);
-
     it("Should be deployed properly", async function() {
         assert.ok(CryptoLoan.options.address);
     });
