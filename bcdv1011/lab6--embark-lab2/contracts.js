@@ -1,7 +1,5 @@
 module.exports = {
-  // default applies to all environments
   default: {
-    // Blockchain node to deploy the contracts
     deployment: {
       host: "localhost",
       port: 8555,
@@ -16,7 +14,9 @@ module.exports = {
 
     gas: "auto",
 
-    contracts: {},
+    contracts: {
+      SimpleLoan,
+    },
   },
 
   development: {
