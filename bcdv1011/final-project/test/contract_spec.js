@@ -11,7 +11,7 @@ config({
 });
 
 contract('CryptoLoan', () => {
-    it("Should be deployed properly", async function() {
+    it("Should be deployed properly", async () => {
         assert.ok(CryptoLoan.options.address);
     });
 })
