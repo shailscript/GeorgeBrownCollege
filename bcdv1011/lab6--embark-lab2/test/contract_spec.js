@@ -11,5 +11,8 @@ config({
 });
 
 contract('SimpleLoan', async () => {
-    //Tests here.
+    it("Should be deployed properly", async () => {
+        assert.ok(CryptoLoan.options.address);
+    });
+    
 });
