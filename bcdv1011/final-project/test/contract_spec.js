@@ -7,7 +7,7 @@ config({
         CryptoLoan: {},
     },
 }, (_err, web3_acccounts) => {
-    accounts = web3_acccounts
+    accounts = web3_acccounts;
 });
 
 contract('CryptoLoan', () => {
@@ -20,4 +20,4 @@ contract('CryptoLoan', () => {
         let loan = await CryptoLoan.methods.viewLoan('0xed54f39cc9a9cbd9bd4f8fb743769280bbf76b07').call();
         assert.equal(loan, 1040);
     });
-})
+});
