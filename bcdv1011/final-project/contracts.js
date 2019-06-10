@@ -4,7 +4,7 @@ module.exports = {
 
     deployment: {
       host: "localhost", // Host of the blockchain node
-      port: 8546, // Port of the blockchain node
+      port: 8555, // Port of the blockchain node
       type: "ws"
     },
 
@@ -17,12 +17,13 @@ module.exports = {
     gas: "auto",
 
     contracts: {
+      CryptoLoan: {},
     }
   },
 
   development: {
     dappConnection: [
-      "ws://localhost:8546",
+      "ws://localhost:855",
       "http://localhost:8545",
       "$WEB3"  
     ]
