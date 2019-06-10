@@ -1,0 +1,37 @@
+{
+  "className": "SimpleLoan",
+  "args": [],
+  "code": "6080604052348015600f57600080fd5b5060008054600160a060020a03191633179055603580602f6000396000f3fe6080604052600080fdfea165627a7a72305820ac0e1a2585c220a1097c74e241d5071220aef48dd4ce42d774932011f94e1d4f0029",
+  "runtimeBytecode": "6080604052600080fdfea165627a7a72305820ac0e1a2585c220a1097c74e241d5071220aef48dd4ce42d774932011f94e1d4f0029",
+  "realRuntimeBytecode": "6080604052600080fdfea165627a7a72305820",
+  "linkReferences": {},
+  "swarmHash": "ac0e1a2585c220a1097c74e241d5071220aef48dd4ce42d774932011f94e1d4f",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "10600",
+      "executionCost": "20358",
+      "totalCost": "30958"
+    }
+  },
+  "functionHashes": {},
+  "abiDefinition": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "filename": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/lab6--embark-lab2/.embark/contracts/SimpleLoan.sol",
+  "originalFilename": "contracts/SimpleLoan.sol",
+  "path": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/lab6--embark-lab2/contracts/SimpleLoan.sol",
+  "gas": "auto",
+  "type": "file",
+  "deploy": true,
+  "_gasLimit": 6000000,
+  "error": false,
+  "deploymentAccount": "0xEd54F39Cc9A9cbd9BD4F8fb743769280Bbf76B07",
+  "realArgs": [],
+  "address": "0x0CF42dbc001cE8F9A893Fa22493e939e1279175d",
+  "deployedAddress": "0x0CF42dbc001cE8F9A893Fa22493e939e1279175d"
+}
