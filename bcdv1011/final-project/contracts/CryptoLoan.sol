@@ -116,7 +116,7 @@ contract CryptoLoan {
         return loanRecords[_payee];
     }
 
-    function editLoan (address _payee, uint amount) public onlyOwner{
+    function editLoan (address _payee, uint amount) public onlyOwner {
         loanRecords[_payee] = amount;
     }
 }
