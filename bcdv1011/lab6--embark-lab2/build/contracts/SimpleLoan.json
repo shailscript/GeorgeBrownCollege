@@ -1,37 +1,93 @@
 {
   "className": "SimpleLoan",
   "args": [],
-  "code": "6080604052348015600f57600080fd5b5060008054600160a060020a03191633179055603580602f6000396000f3fe6080604052600080fdfea165627a7a72305820ac0e1a2585c220a1097c74e241d5071220aef48dd4ce42d774932011f94e1d4f0029",
-  "runtimeBytecode": "6080604052600080fdfea165627a7a72305820ac0e1a2585c220a1097c74e241d5071220aef48dd4ce42d774932011f94e1d4f0029",
-  "realRuntimeBytecode": "6080604052600080fdfea165627a7a72305820",
+  "code": "608060405234801561001057600080fd5b5060008054600160a060020a031916331790556101f2806100326000396000f3fe608060405234801561001057600080fd5b5060043610610052577c01000000000000000000000000000000000000000000000000000000006000350463ad24a3368114610057578063dc2ab46d1461009e575b600080fd5b61009c6004803603608081101561006d57600080fd5b5073ffffffffffffffffffffffffffffffffffffffff81351690602081013590604081013590606001356100e3565b005b6100d1600480360360208110156100b457600080fd5b503573ffffffffffffffffffffffffffffffffffffffff1661019e565b60408051918252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16331461016957604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f556e617574686f72697a65640000000000000000000000000000000000000000604482015290519081900360640190fd5b73ffffffffffffffffffffffffffffffffffffffff939093166000908152600160205260409020606491830290930204019055565b73ffffffffffffffffffffffffffffffffffffffff166000908152600160205260409020549056fea165627a7a72305820d185420887d6a4b8592d9f8b0b0bccc7973ff1c70efd325d38bfa27c3afc3de10029",
+  "runtimeBytecode": "608060405234801561001057600080fd5b5060043610610052577c01000000000000000000000000000000000000000000000000000000006000350463ad24a3368114610057578063dc2ab46d1461009e575b600080fd5b61009c6004803603608081101561006d57600080fd5b5073ffffffffffffffffffffffffffffffffffffffff81351690602081013590604081013590606001356100e3565b005b6100d1600480360360208110156100b457600080fd5b503573ffffffffffffffffffffffffffffffffffffffff1661019e565b60408051918252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16331461016957604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f556e617574686f72697a65640000000000000000000000000000000000000000604482015290519081900360640190fd5b73ffffffffffffffffffffffffffffffffffffffff939093166000908152600160205260409020606491830290930204019055565b73ffffffffffffffffffffffffffffffffffffffff166000908152600160205260409020549056fea165627a7a72305820d185420887d6a4b8592d9f8b0b0bccc7973ff1c70efd325d38bfa27c3afc3de10029",
+  "realRuntimeBytecode": "608060405234801561001057600080fd5b5060043610610052577c01000000000000000000000000000000000000000000000000000000006000350463ad24a3368114610057578063dc2ab46d1461009e575b600080fd5b61009c6004803603608081101561006d57600080fd5b5073ffffffffffffffffffffffffffffffffffffffff81351690602081013590604081013590606001356100e3565b005b6100d1600480360360208110156100b457600080fd5b503573ffffffffffffffffffffffffffffffffffffffff1661019e565b60408051918252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16331461016957604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f556e617574686f72697a65640000000000000000000000000000000000000000604482015290519081900360640190fd5b73ffffffffffffffffffffffffffffffffffffffff939093166000908152600160205260409020606491830290930204019055565b73ffffffffffffffffffffffffffffffffffffffff166000908152600160205260409020549056fea165627a7a72305820",
   "linkReferences": {},
-  "swarmHash": "ac0e1a2585c220a1097c74e241d5071220aef48dd4ce42d774932011f94e1d4f",
+  "swarmHash": "d185420887d6a4b8592d9f8b0b0bccc7973ff1c70efd325d38bfa27c3afc3de1",
   "gasEstimates": {
     "creation": {
-      "codeDepositCost": "10600",
-      "executionCost": "20358",
-      "totalCost": "30958"
+      "codeDepositCost": "99600",
+      "executionCost": "20439",
+      "totalCost": "120039"
+    },
+    "external": {
+      "addLoan(address,uint256,uint256,uint256)": "20565",
+      "viewLoan(address)": "520"
     }
   },
-  "functionHashes": {},
+  "functionHashes": {
+    "addLoan(address,uint256,uint256,uint256)": "ad24a336",
+    "viewLoan(address)": "dc2ab46d"
+  },
   "abiDefinition": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_payee",
+          "type": "address"
+        },
+        {
+          "name": "principle",
+          "type": "uint256"
+        },
+        {
+          "name": "rate",
+          "type": "uint256"
+        },
+        {
+          "name": "time",
+          "type": "uint256"
+        }
+      ],
+      "name": "addLoan",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xad24a336"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_payee",
+          "type": "address"
+        }
+      ],
+      "name": "viewLoan",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xdc2ab46d"
+    },
     {
       "inputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "constructor"
+      "type": "constructor",
+      "signature": "constructor"
     }
   ],
   "filename": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/lab6--embark-lab2/.embark/contracts/SimpleLoan.sol",
   "originalFilename": "contracts/SimpleLoan.sol",
   "path": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/lab6--embark-lab2/contracts/SimpleLoan.sol",
-  "gas": "auto",
+  "gas": 217857,
+  "gasPrice": "20000000000",
   "type": "file",
   "deploy": true,
   "_gasLimit": 6000000,
   "error": false,
   "deploymentAccount": "0xEd54F39Cc9A9cbd9BD4F8fb743769280Bbf76B07",
   "realArgs": [],
-  "address": "0x0CF42dbc001cE8F9A893Fa22493e939e1279175d",
-  "deployedAddress": "0x0CF42dbc001cE8F9A893Fa22493e939e1279175d"
+  "deployedAddress": "0xD29DA4575c1A4BDF7df94F473843f0e0E3A52AcA",
+  "transactionHash": "0x5979fd18052ebeca173c709a2c2211980d785b81d9de1c48ae33031da2a042ba"
 }
