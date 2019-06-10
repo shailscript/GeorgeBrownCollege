@@ -1,12 +1,12 @@
 {
   "name": "final-project",
   "version": "0.0.1",
-  "description": "",
+  "description": "A simple dApp for a user to keep track of loans given and update entries.",
   "scripts": {
     "test": "embark test"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["solidity", "embark"],
+  "author": "Shailendra Shukla",
   "license": "MIT",
   "devDependencies": {
     "embarkjs-connector-web3": "^4.0.0"
