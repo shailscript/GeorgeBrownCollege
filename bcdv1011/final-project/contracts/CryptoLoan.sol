@@ -110,4 +110,8 @@ contract CryptoLoan {
     function viewLoan (address _payee) public view returns(uint) {
         return loanRecords[_payee];
     }
+
+    function editLoan (address _payee, uint amount) public {
+        loanRecords[_payee] = amount;
+    }
 }
