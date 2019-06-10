@@ -27,7 +27,7 @@ contract('CryptoLoan', () => {
         assert.equal(loan, 104);
     });
 
-    it("Should fail when called by others", async () => {
+    it("Should fail when addLoan is called by others", async () => {
         try {
             await CryptoLoan.methods.addLoan('0xed54f39cc9a9cbd9bd4f8fb743769280bbf76b07', 1000, 2, 2).send({from: accounts[1]});
         } catch (error) {
@@ -35,7 +35,7 @@ contract('CryptoLoan', () => {
         }
     });
 
-    it("Should fail when called by others", async () => {
+    it("Should fail when editLoan called by others", async () => {
         try {
             await CryptoLoan.methods.editLoan('0xed54f39cc9a9cbd9bd4f8fb743769280bbf76b07', 100).send({from: accounts[1]});
         } catch (error) {
