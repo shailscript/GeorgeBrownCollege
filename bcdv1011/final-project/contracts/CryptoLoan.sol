@@ -106,7 +106,7 @@ contract CryptoLoan {
         _;
     }
 
-    function addLoan (address _payee, uint principle, uint rate, uint time) public {
+    function addLoan (address _payee, uint principle, uint rate, uint time) public onlyOwner{
         uint interest = (principle.mul(rate).mul(time)).div(100);
         uint amount = principle.add(interest);
         loanRecords[_payee] = amount;
@@ -116,7 +116,7 @@ contract CryptoLoan {
         return loanRecords[_payee];
     }
 
-    function editLoan (address _payee, uint amount) public {
+    function editLoan (address _payee, uint amount) public onlyOwner{
         loanRecords[_payee] = amount;
     }
 }
