@@ -1,4 +1,4 @@
-let SimpleLoan = reqiure('Embark/contracts/SimpleLoan');
+let SimpleLoan = require('Embark/contracts/SimpleLoan');
 
 let accounts;
 
