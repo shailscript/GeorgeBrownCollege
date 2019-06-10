@@ -101,6 +101,11 @@ contract CryptoLoan {
         owner = msg.sender;
     }
 
+    modifier onlyOwner {
+        require(owner == msg.sender, "Unauthorized");
+        _;
+    }
+
     function addLoan (address _payee, uint principle, uint rate, uint time) public {
         uint interest = (principle.mul(rate).mul(time)).div(100);
         uint amount = principle.add(interest);
