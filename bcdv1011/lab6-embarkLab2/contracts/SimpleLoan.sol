@@ -6,4 +6,9 @@ contract SimpleLoan {
     constructor() public {
         owner = msg.sender;
     }
+
+    modifier onlyOwner {
+        require(msg.sender == owner, "Unautorized");
+        _;
+    }
 }
