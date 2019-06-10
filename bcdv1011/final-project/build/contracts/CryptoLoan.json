@@ -1,0 +1,57 @@
+{
+  "className": "CryptoLoan",
+  "args": [],
+  "code": "608060405234801561001057600080fd5b5060008054600160a060020a0319163317905560c0806100316000396000f3fe6080604052348015600f57600080fd5b50600436106044577c010000000000000000000000000000000000000000000000000000000060003504638da5cb5b81146049575b600080fd5b604f6078565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820c1a130959c9d3c6939a20b77b1ee836540d69500414e8e7b402ac61228a319a80029",
+  "runtimeBytecode": "6080604052348015600f57600080fd5b50600436106044577c010000000000000000000000000000000000000000000000000000000060003504638da5cb5b81146049575b600080fd5b604f6078565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820c1a130959c9d3c6939a20b77b1ee836540d69500414e8e7b402ac61228a319a80029",
+  "realRuntimeBytecode": "6080604052348015600f57600080fd5b50600436106044577c010000000000000000000000000000000000000000000000000000000060003504638da5cb5b81146049575b600080fd5b604f6078565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820",
+  "linkReferences": {},
+  "swarmHash": "c1a130959c9d3c6939a20b77b1ee836540d69500414e8e7b402ac61228a319a8",
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "38400",
+      "executionCost": "20379",
+      "totalCost": "58779"
+    },
+    "external": {
+      "owner()": "393"
+    }
+  },
+  "functionHashes": {
+    "owner()": "8da5cb5b"
+  },
+  "abiDefinition": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8da5cb5b"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "filename": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/final-project/.embark/contracts/CryptoLoan.sol",
+  "originalFilename": "contracts/CryptoLoan.sol",
+  "path": "/Users/shailendrashukla/projects/github/GeorgeBrownCollege/bcdv1011/final-project/contracts/CryptoLoan.sol",
+  "gas": "auto",
+  "type": "file",
+  "deploy": true,
+  "_gasLimit": 6000000,
+  "error": false,
+  "deploymentAccount": "0xEd54F39Cc9A9cbd9BD4F8fb743769280Bbf76B07",
+  "realArgs": [],
+  "address": "0xB0D26D3703c7382004Bd4c13a2a9d60ADfBF3964",
+  "deployedAddress": "0xB0D26D3703c7382004Bd4c13a2a9d60ADfBF3964"
+}
