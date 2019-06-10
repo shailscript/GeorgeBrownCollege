@@ -15,7 +15,7 @@ module.exports = {
     gas: "auto",
 
     contracts: {
-      SimpleLoan,
+      SimpleLoan: {},
     },
   },
 
