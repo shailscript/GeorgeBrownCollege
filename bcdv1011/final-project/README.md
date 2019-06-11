@@ -2,6 +2,9 @@
 
 This is done as a final project for the course BCDV1011 at George Brown College.
 I've used Embark framework for testing smart contracts using their underlying implementation of Mocha, which is a JavaScript test framework.
+
+I've used Verifier Pattern for restricting functions in particular, Modularity Pattern for implementing SafeMath library and identity pattern where identity to me as a contract owner is the single unique identifier of the people I've lent my money to. This way, using design patters have enhanced the code readability and implementation to be very clean and comprehensive.
+
 I've tried developing this project using the Test Driven Development style.
 
 There is one contract with 3 methods, 1 library and 1 modifier in it viz.,

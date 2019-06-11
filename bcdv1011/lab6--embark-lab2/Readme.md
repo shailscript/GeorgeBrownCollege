@@ -3,7 +3,7 @@
 Please install Embark, follow the instructions [here](https://embark.status.im/).
 
 Run these commands,
-```Shell
+```bash
 npm install
 embark simulator
 embark run
