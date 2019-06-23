@@ -1,4 +1,7 @@
 const ethers = require('ethers');
+const abi = require('./abi');
+const bytecode = require('./bytecode');
+
 require('dotenv').config();
 
 const provider = ethers.getDefaultProvider('ropsten');
