@@ -1,12 +1,3 @@
-<style>
-body { font-size: 20px; }
-div { margin-top: 20px; }
-
-ul > li {
-  margin-top: 10px;
-}
-</style>
-
 <h1>Lab 2 (Doug's Class): Metamask Status Component</h1>
 
 <div>Create a react component that displays information about the user's metamask state. Your submission should be a single javascript file, ie <code>App.js</code> if you are using create-react-app. <b>Do not submit .zip files</b> or anything else, or you will receive 0 (but you can re-submit).</div>
@@ -54,7 +45,7 @@ export default App;
   </li>
   <li>
     Here are some example screenshots of what your component could look like:
-    <div><img src="lab-example-screen1.png" /></div>
-    <div><img src="lab-example-screen2.png" /></div>
+    <div><img src="https://raw.githubusercontent.com/hoytech/blockchain-dapps/master/lesson2/lab-example-screen1.png" /></div>
+    <div><img src="https://raw.githubusercontent.com/hoytech/blockchain-dapps/master/lesson2/lab-example-screen2.png" /></div>
   </li>
 </ul>
