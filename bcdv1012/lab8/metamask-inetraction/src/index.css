@@ -7,7 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5em;
+}
+
+.header {
+  background: #888;
+  padding: 2em 4em;
+  border-radius: 10px; 
+}
+
+.status {
+  padding: 2em;
+  color: white;
+  background: #222;
+  border-top-right-radius: 20px; 
+  margin-bottom: 3em; 
+}
+
+.info {
+  padding: 2em;
+  color: white;
+  background: #222;
+  margin-bottom: 3em; 
+}
+
+h2 {
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
 }
