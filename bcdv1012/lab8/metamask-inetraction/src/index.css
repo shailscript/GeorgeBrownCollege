@@ -51,3 +51,8 @@ button {
   color: white;
   font-size: 1em;
 }
+
+.app-info {
+  text-align: center;
+  margin: auto 20px;
+}
