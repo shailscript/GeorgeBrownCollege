@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useWeb3 } from './UseWeb3';
  
 const MetamaskStatus = () => {
@@ -17,11 +17,26 @@ console.log(w3);
 const Action = ({ w3: { status, enable, account } }) => {
   switch (status) {
     case 'NO_WEB3':
-      return (<a href='https://metamask.io/'>Get metamask</a>);
+      return (
+        <Fragment>
+          <p className='app-info'>It seems like you don't have metamask installed.</p>
+          <a href='https://metamask.io/'>Get metamask</a>
+        </Fragment>
+      );
     case 'LOCKED':
-      return (<button onClick={enable}>Click to enable metamask</button>);
+      return (
+        <Fragment>
+          <p className='app-info'>Please unlock metamask to continue using this app.</p>
+          <button onClick={enable}>Click to unlock metamask</button>
+        </Fragment>
+      );
     case 'NOT_ENABLED':
-      return (<button onClick={enable}>Click to enable metamask</button>);
+      return (
+        <Fragment>
+          <p className='app-info'>Please unlock metamask to continue using this app.</p>
+          <button onClick={enable}>Click to enable metamask</button>
+        </Fragment>
+      );
     case 'READY':
       return (<UserInfo account={account} />);
     default:
