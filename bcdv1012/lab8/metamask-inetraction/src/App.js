@@ -1,21 +1,32 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { useWeb3 } from './UseWeb3';
  
 const MetamaskStatus = () => {
-    let w3 = useWeb3();
-    console.log(w3); // look in your JS console
+  let w3 = useWeb3();
 
-    return (
-      <Fragment>
-        <div>status = {w3.status}</div>
+  return (
+    <div className='card'>
+      <div className='header'>
+        <p>Status = {w3.status}</p>
+        
         { w3.status === 'NO_WEB3' ?
             <a href='https://metamask.io/'>Get metamask</a>
           : (w3.status === 'LOCKED' || w3.status === 'NOT_ENABLED') ?
               <button onClick={w3.enable}>Enable metamask</button>
-            : <p>All cool </p>
+            : (w3.account && <UserInfo w3={w3} />)
         }
-      </Fragment>
-    );
+      </div>
+    </div>
+  );
+}
+
+const UserInfo = (props) => {
+  return (
+    <div>
+      <p>{props.w3.account.address}</p>
+      <p>{props.w3.account.networkName}</p>
+    </div>
+  )
 }
 
 const App = () => {
