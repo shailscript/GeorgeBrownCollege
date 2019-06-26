@@ -8,16 +8,26 @@ console.log(w3);
     <div className='card'>
       <div className='header'>
         <h2 className='status'>Status: {w3.status}</h2>
-        
-        { w3.status === 'NO_WEB3' ?
-            <a href='https://metamask.io/'>Get metamask</a>
-          : (w3.status === 'LOCKED' || w3.status === 'NOT_ENABLED') ?
-              <button onClick={w3.enable}>Enable metamask</button>
-            : (w3.account && <UserInfo account={w3.account} />)
-        }
+        <Action w3={w3} />
       </div>
     </div>
   );
+}
+
+const Action = ({ w3: { status, enable, account } }) => {
+  switch (status) {
+    case 'NO_WEB3':
+      return (<a href='https://metamask.io/'>Get metamask</a>);
+    case 'LOCKED':
+      return (<button onClick={enable}>Click to enable metamask</button>);
+    case 'NOT_ENABLED':
+      return (<button onClick={enable}>Click to enable metamask</button>);
+    case 'READY':
+      return (<UserInfo account={account} />);
+    default:
+      return (<p>Unexpected Error occured.</p>)
+
+  }
 }
 
 const UserInfo = ( { account: { address, networkName} } ) => (
