@@ -19,21 +19,21 @@ const Action = ({ w3: { status, enable, account } }) => {
     case 'NO_WEB3':
       return (
         <Fragment>
-          <p className='app-info'>It seems like you don't have metamask installed.</p>
+          <p className='app-info'>&#9432; It seems like you don't have metamask installed.</p>
           <a href='https://metamask.io/'>Get metamask</a>
         </Fragment>
       );
     case 'LOCKED':
       return (
         <Fragment>
-          <p className='app-info'>Please unlock metamask to continue using this app.</p>
+          <p className='app-info'>&#9432; Please unlock metamask to continue using this app.</p>
           <button onClick={enable}>Click to unlock metamask</button>
         </Fragment>
       );
     case 'NOT_ENABLED':
       return (
         <Fragment>
-          <p className='app-info'>Please unlock metamask to continue using this app.</p>
+          <p className='app-info'>&#9432; Please unlock metamask to continue using this app.</p>
           <button onClick={enable}>Click to enable metamask</button>
         </Fragment>
       );
