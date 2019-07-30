@@ -1,4 +1,5 @@
 import React from "react";
+// import { transactionHistory } from '../redux/reducer';
 
 const data = [
     {
@@ -22,6 +23,8 @@ const data = [
     
     }
 ];
+
+// transactionHistory('0xa4b9663aa59642A9c3a8bcA87542ABBf9462b213');
 
 const Layout = () => {
     return (
@@ -99,3 +102,7 @@ const Layout = () => {
 }
 
 export default Layout;
+
+const mapStateToProps = state => ({
+    data
+})
